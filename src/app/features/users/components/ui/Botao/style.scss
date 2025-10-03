@@ -1,0 +1,21 @@
+@import "../../../../../styles/variables";
+
+.btn {
+    width: 210px;
+    height: 59px;
+    background-color: $amarelo_mostarda;
+    border: 1px solid $amarelo_mostarda;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .btn-texto {
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+    }
+}
