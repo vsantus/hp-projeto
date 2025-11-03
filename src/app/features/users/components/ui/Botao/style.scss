@@ -1,10 +1,10 @@
-@import "../../../../../styles/variables";
+@import "../../../../../styles/variables.scss";
 
 .btn {
     width: 210px;
     height: 59px;
-    background-color: $amarelo_mostarda;
-    border: 1px solid $amarelo_mostarda;
+    background-color: var(--amarelo-mostarda);
+    border: 1px solid var(--amarelo-mostarda);
     border-radius: 10px;
     display: flex;
     justify-content: center;
