@@ -1,7 +1,6 @@
+import { Header, Imagem } from "../HeaderPersonagens/style";
 import logo from "../../../../../../assets/harry-logo-preta.png";
 
-import { Header } from "../HeaderHome/style";
-import { Imagem } from "../HeaderHome/style";
 
 export default function HeaderPersonagens() {
     return (

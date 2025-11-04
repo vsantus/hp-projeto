@@ -1,4 +1,5 @@
-import { Header } from "../HeaderPersonagens/style";
+
+import { Header } from "../HeaderHome/style";
 
 export default function HeaderHome() {
     return (

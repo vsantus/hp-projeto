@@ -6,9 +6,8 @@ import Botao from "../../ui/Botao";
 import ConjuntoCasas from "../../ui/ConjuntoCasas";
 import Detalhe from "../../ui/Detalhe";
 
-import { Imagem } from "./style";
-import HeaderHome from "../../ui/Header/HeaderPersonagens";
-import HeaderPersonagens from "../../ui/Header/HeaderHome";
+import { LayoutHome, Imagem, FooterHome } from "./style";
+import HeaderHome from "../../ui/Header/HeaderHome";
 
 
 export default function Home() {
@@ -22,11 +21,15 @@ export default function Home() {
 
     return (
         <>
+            {/* <LayoutHome>     */}
             {/* <HeaderHome /> */}
-            {/* <Botao /> */}
             {/* <Imagem src={logo.src} alt="Logo Harry Potter" /> */}
+            {/* <Botao /> */}
             {/* <Detalhe titulo={"Navegue pelas Casas"}/> */}
             {/* <ConjuntoCasas />  */}
+            {/* </LayoutHome> */}
+            {/* <FooterHome /> */}
         </>
+
     );
-}
+}                      
