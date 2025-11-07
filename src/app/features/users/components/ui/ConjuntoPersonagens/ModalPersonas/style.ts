@@ -18,6 +18,10 @@ export const ModalContent = styled.div`
   width: 704px;
   height: 453px;
   text-align: center;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
 
   img {
     width: 150px;
@@ -32,5 +36,15 @@ export const ModalContent = styled.div`
     color: white;
     border-radius: 6px;
     cursor: pointer;
-  }
-`;
+  }  
+  `;
+
+  export const DescricaoV = styled.div`
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  width: 100%;
+  gap: 4px;
+  `;

@@ -21,14 +21,24 @@ export default function Home() {
 
     return (
         <>
-            {/* <LayoutHome>     */}
-            {/* <HeaderHome /> */}
-            {/* <Imagem src={logo.src} alt="Logo Harry Potter" /> */}
-            {/* <Botao /> */}
-            {/* <Detalhe titulo={"Navegue pelas Casas"}/> */}
-            {/* <ConjuntoCasas />  */}
-            {/* </LayoutHome> */}
-            {/* <FooterHome /> */}
+            <LayoutHome>
+                <HeaderHome />
+                <Imagem
+                    src={logo.src}
+                    alt="Logo Harry Potter"
+                />
+                <Botao
+                    texto="VEJA TODOS OS PERSONAGENS"
+                    width={"210px"}
+                    height={"59px"}
+                    borderRadius={'10px'}
+                />
+                <Detalhe
+                    titulo={"Navegue pelas Casas"}
+                />
+                <ConjuntoCasas />
+            </LayoutHome>
+            <FooterHome />
         </>
 
     );

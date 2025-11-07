@@ -1,9 +1,17 @@
-import "./style.scss";
+import { Btn, Texto } from "./style";
 
-export default function Botao() {
-    return (
-        <div className="btn">
-            <p className="btn-texto">VEJA TODOS <br /> OS PERSONAGENS </p>
-        </div>
-    );
+interface BotaoProps {
+  texto: string;
+  width?: string;
+  height?: string;
+  borderRadius?: string;
+  onClick?: () => void;
+}
+
+export default function Botao({ texto, width, height, borderRadius, onClick }: BotaoProps) {
+  return (
+    <Btn width={width} height={height} borderRadius={borderRadius} onClick={onClick}>
+      <Texto>{texto}</Texto>
+    </Btn>
+  );
 }

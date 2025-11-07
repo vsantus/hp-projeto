@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { Conjunto } from "./style";
-import Personas from "./Personas";
 import ModalPersonas from "./ModalPersonas";
 
 import exemplo from "@/app/assets/exemplo.jpg";
@@ -39,7 +38,7 @@ export default function ConjuntoPersonas() {
             <Conjunto>
                 {personagens.map((person) => (
                     <div key={person.id} onClick={() => handleOpenModal(person)}>
-                        <Moldura background={exemplo} />
+                        <Moldura background={person.image} size="md" />
                     </div>
                 ))}
             </Conjunto>
