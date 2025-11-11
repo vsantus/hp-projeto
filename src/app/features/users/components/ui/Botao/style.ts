@@ -4,9 +4,14 @@ interface BtnProps {
   width?: string;
   height?: string;
   borderRadius?: string;
+  left?: string;
+  top?: string;
 }
 
 export const Btn = styled.div<BtnProps>`
+  position: relative;
+  ${({ left }) => left && `left: ${left};`}
+  ${({ top }) => top && `top: ${top};`}
   ${({ width }) => width && `width: ${width};`}
   ${({ height }) => height && `height: ${height};`}
   ${({ borderRadius }) => borderRadius && `border-radius: ${borderRadius};`}
@@ -22,7 +27,6 @@ export const Btn = styled.div<BtnProps>`
     opacity: 0.9;
   }
 `;
-
 
 export const Texto = styled.p`
   color: var(--azul-bg);

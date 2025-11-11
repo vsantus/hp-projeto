@@ -10,7 +10,7 @@ export const Container = styled.div`
   align-items: center;
   gap: 10px;
   width: 100%;
-
+  margin-bottom: 20px;
 `;
 
 export const Linha = styled.hr`

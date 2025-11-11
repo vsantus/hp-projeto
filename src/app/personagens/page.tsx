@@ -1,11 +1,12 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
-import Detalhe from "../../ui/Detalhe";
-import HeaderPersonagens from "../../ui/Header/HeaderPersonagens";
-import { Container, LayoutPersonagens } from "./style";
-import ConjuntoPersonas from "../../ui/ConjuntoPersonagens";
+import Detalhe from "../features/users/components/ui/Detalhe";
+import HeaderPersonagens from "../features/users/components/ui/Header/HeaderPersonagens";
 
-
+import ConjuntoPersonas from "../features/users/components/ui/ConjuntoPersonagens";
+import { Container, LayoutPersonagens } from "@/app/personagens/style";
 
 export default function Personagens() {
     const [titulo, setTitulo] = useState("Carregando...");

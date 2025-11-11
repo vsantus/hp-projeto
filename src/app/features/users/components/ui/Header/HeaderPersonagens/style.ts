@@ -15,4 +15,5 @@ export const Header = styled.div`
   export const Imagem = styled.img`
   width: 203px;
   height: 72px;
+  cursor: pointer;
   `;

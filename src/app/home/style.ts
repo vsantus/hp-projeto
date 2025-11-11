@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import background from "../../../../../assets/background-1.jpg";
-import "../../../../../styles/variables.scss";
+import background from "..//assets/background-1.jpg";
+import "../styles/variables.scss";
 
 export const LayoutHome = styled.div`
   width: 100%;
@@ -20,4 +20,17 @@ export const FooterHome = styled.div`
 export const Imagem = styled.img`
   width: 356px;
   height: 175px;
+  position: relative;
+  top: 120px;
+  left: 150px;
 `;
+
+export const ContainerBelow = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  height: 400px;
+  width: 100%;
+  padding: 170px;
+  `;
