@@ -1,25 +1,28 @@
 import styled from "styled-components";
 
 interface BtnProps {
-  width?: string;
-  height?: string;
-  borderRadius?: string;
-  left?: string;
-  top?: string;
+  $width?: string;
+  $height?: string;
+  $borderRadius?: string;
+  $top?: string;
+  $left?: string;
 }
 
 export const Btn = styled.div<BtnProps>`
+  ${({ $width }) => $width && `width: ${$width};`}
+  ${({ $height }) => $height && `height: ${$height};`}
+  ${({ $borderRadius }) => $borderRadius && `border-radius: ${$borderRadius};`}
+  ${({ $top }) => $top && `top: ${$top};`}
+  ${({ $left }) => $left && `left: ${$left};`}
+
+  
   position: relative;
-  ${({ left }) => left && `left: ${left};`}
-  ${({ top }) => top && `top: ${top};`}
-  ${({ width }) => width && `width: ${width};`}
-  ${({ height }) => height && `height: ${height};`}
-  ${({ borderRadius }) => borderRadius && `border-radius: ${borderRadius};`}
   background: var(--amarelo-mostarda);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: none;
   transition: transform 0.2s ease, opacity 0.2s ease;
 
   &:hover {

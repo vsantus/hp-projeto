@@ -1,4 +1,3 @@
-// Personas/style.ts
 "use client";
 
 import { StaticImageData } from "next/image";
