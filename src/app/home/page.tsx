@@ -9,7 +9,7 @@ import ConjuntoCasas from "../features/users/components/ui/ConjuntoCasas";
 import Detalhe from "../features/users/components/ui/Detalhe";
 import HeaderHome from "../features/users/components/ui/Header/HeaderHome";
 import { LayoutHome, Imagem, FooterHome, ContainerBelow } from "./style";
-import { hpApi } from "../lib/hpApi";  
+import { hpApi } from "../services/hpApi";
 
 export default function Home() {
   const [titulo, setTitulo] = useState("Carregando...");
@@ -20,13 +20,13 @@ export default function Home() {
   }, []);
 
   const handleClick = async () => {
-  const personagens = await hpApi.getAllCharacters();
+    const personagens = await hpApi.getAllCharacters();
 
-  localStorage.setItem("personagens", JSON.stringify(personagens));
-  console.log(personagens, 'personagens');
+    localStorage.setItem("personagens", JSON.stringify(personagens));
+    console.log(personagens, 'personagens');
 
-  router.push("/personagens");
-};
+    router.push("/personagens");
+  };
 
 
   return (

@@ -1,8 +1,8 @@
 "use client";
 
 import useSWR from "swr";
-import { hpApi } from "../lib/hpApi";
-import { Character } from "../lib/hp";
+import { hpApi } from "../services/hpApi";
+import { Character } from "../services/hp";
 
 export function useCharactersByHouse(house?: string) {
   const key = house ? `/hp/characters/house/${house}` : null;

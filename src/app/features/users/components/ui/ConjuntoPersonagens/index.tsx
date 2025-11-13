@@ -10,8 +10,8 @@ import {
 
 import ModalPersonas from "./ModalPersonas";
 import { Moldura } from "./Personas/style";
-import { Character } from "@/app/lib/hp";
-import { hpApi } from "@/app/lib/hpApi";
+import { Character } from "@/app/services/hp";
+import { hpApi } from "@/app/services/hpApi";
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
